@@ -39,7 +39,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>KAKAO_APP_KEY</key>
-	<string></string>
+	<string>카카오내비 네이티브키 입력</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
