@@ -18,13 +18,18 @@
 		4765B4CF1F5A427500AE916D /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = 4765B4C41F5A427500AE916D /* 05.png */; };
 		4765B4D01F5A427500AE916D /* 06.png in Resources */ = {isa = PBXBuildFile; fileRef = 4765B4C51F5A427500AE916D /* 06.png */; };
 		4765B4D31F5A42B000AE916D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4765B4D21F5A42B000AE916D /* Main.storyboard */; };
-		4765B4DA1F5A439400AE916D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4765B4D91F5A439400AE916D /* SWRevealViewController.m */; };
 		4765B4DE1F5A478100AE916D /* KakaoNavi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4765B4DD1F5A478100AE916D /* KakaoNavi.framework */; };
 		4765B4E01F5A484800AE916D /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4765B4DF1F5A484800AE916D /* KakaoCommon.framework */; };
 		4765B4E21F5B9F8F00AE916D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4765B4E11F5B9F8F00AE916D /* Assets.xcassets */; };
+		4765B4E61F5BDD6300AE916D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4765B4E51F5BDD6300AE916D /* GoogleService-Info.plist */; };
+		4765B4E81F5BE44B00AE916D /* SlideTruckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765B4E71F5BE44B00AE916D /* SlideTruckView.swift */; };
+		4765B4F21F5D1BDA00AE916D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4765B4F11F5D1BDA00AE916D /* SWRevealViewController.m */; };
+		4765B50F1F5FB5C100AE916D /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765B50E1F5FB5C100AE916D /* FoodListView.swift */; };
+		D82C3C14BD8D4B46FE5EBD63 /* Pods_FoodTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF50AE4098FDE35077ADAB7 /* Pods_FoodTruck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AF50AE4098FDE35077ADAB7 /* Pods_FoodTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4765B4AB1F5A3ACA00AE916D /* FoodTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4765B4AE1F5A3ACA00AE916D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4765B4B01F5A3ACA00AE916D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,11 +44,16 @@
 		4765B4C51F5A427500AE916D /* 06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06.png; sourceTree = "<group>"; };
 		4765B4D21F5A42B000AE916D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4765B4D71F5A439400AE916D /* FoodTruck-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FoodTruck-Bridging-Header.h"; path = "../../../../temp/FoodTruck/FoodTruck/FoodTruck-Bridging-Header.h"; sourceTree = "<group>"; };
-		4765B4D81F5A439400AE916D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		4765B4D91F5A439400AE916D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4765B4DD1F5A478100AE916D /* KakaoNavi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoNavi.framework; sourceTree = "<group>"; };
 		4765B4DF1F5A484800AE916D /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
 		4765B4E11F5B9F8F00AE916D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4765B4E51F5BDD6300AE916D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4765B4E71F5BE44B00AE916D /* SlideTruckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideTruckView.swift; sourceTree = "<group>"; };
+		4765B4F01F5D1BDA00AE916D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		4765B4F11F5D1BDA00AE916D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		4765B50E1F5FB5C100AE916D /* FoodListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		AF9B1461FCF7D4FEB0D6781F /* Pods-FoodTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck.release.xcconfig"; sourceTree = "<group>"; };
+		C461DBE31BC8F26853C6258B /* Pods-FoodTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 			files = (
 				4765B4DE1F5A478100AE916D /* KakaoNavi.framework in Frameworks */,
 				4765B4E01F5A484800AE916D /* KakaoCommon.framework in Frameworks */,
+				D82C3C14BD8D4B46FE5EBD63 /* Pods_FoodTruck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +77,8 @@
 				4765B4AD1F5A3ACA00AE916D /* FoodTruck */,
 				4765B4AC1F5A3ACA00AE916D /* Products */,
 				4765B4DC1F5A473B00AE916D /* Framework */,
+				D6384F781209FDDBF5E22840 /* Pods */,
+				A47AAD60DCB5EE773BD1B76D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,11 +97,14 @@
 				4765B4CA1F5A427500AE916D /* SlideMenu */,
 				4765B4AE1F5A3ACA00AE916D /* AppDelegate.swift */,
 				4765B4B01F5A3ACA00AE916D /* ViewController.swift */,
+				4765B4E71F5BE44B00AE916D /* SlideTruckView.swift */,
+				4765B50E1F5FB5C100AE916D /* FoodListView.swift */,
 				4765B4D21F5A42B000AE916D /* Main.storyboard */,
 				4765B4B51F5A3ACA00AE916D /* Assets.xcassets */,
 				4765B4B71F5A3ACA00AE916D /* LaunchScreen.storyboard */,
 				4765B4BA1F5A3ACA00AE916D /* Info.plist */,
 				4765B4D71F5A439400AE916D /* FoodTruck-Bridging-Header.h */,
+				4765B4E51F5BDD6300AE916D /* GoogleService-Info.plist */,
 			);
 			path = FoodTruck;
 			sourceTree = "<group>";
@@ -110,8 +126,8 @@
 		4765B4CA1F5A427500AE916D /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				4765B4D81F5A439400AE916D /* SWRevealViewController.h */,
-				4765B4D91F5A439400AE916D /* SWRevealViewController.m */,
+				4765B4F01F5D1BDA00AE916D /* SWRevealViewController.h */,
+				4765B4F11F5D1BDA00AE916D /* SWRevealViewController.m */,
 			);
 			name = SlideMenu;
 			path = ../../../../temp/FoodTruck/FoodTruck;
@@ -127,6 +143,23 @@
 			path = FoodTruck;
 			sourceTree = "<group>";
 		};
+		A47AAD60DCB5EE773BD1B76D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AF50AE4098FDE35077ADAB7 /* Pods_FoodTruck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6384F781209FDDBF5E22840 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C461DBE31BC8F26853C6258B /* Pods-FoodTruck.debug.xcconfig */,
+				AF9B1461FCF7D4FEB0D6781F /* Pods-FoodTruck.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4765B4BD1F5A3ACA00AE916D /* Build configuration list for PBXNativeTarget "FoodTruck" */;
 			buildPhases = (
+				425FD92F43E0DBD6873C350F /* [CP] Check Pods Manifest.lock */,
 				4765B4A71F5A3ACA00AE916D /* Sources */,
 				4765B4A81F5A3ACA00AE916D /* Frameworks */,
 				4765B4A91F5A3ACA00AE916D /* Resources */,
+				3B8F520323001E8E00A86395 /* [CP] Embed Pods Frameworks */,
+				FB163090268D2687ADAA1AE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,6 +195,7 @@
 				TargetAttributes = {
 					4765B4AA1F5A3ACA00AE916D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 26VEWE4A84;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -195,12 +232,71 @@
 				4765B4D01F5A427500AE916D /* 06.png in Resources */,
 				4765B4CE1F5A427500AE916D /* 04.png in Resources */,
 				4765B4D31F5A42B000AE916D /* Main.storyboard in Resources */,
+				4765B4E61F5BDD6300AE916D /* GoogleService-Info.plist in Resources */,
 				4765B4CD1F5A427500AE916D /* 03.png in Resources */,
 				4765B4CF1F5A427500AE916D /* 05.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B8F520323001E8E00A86395 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		425FD92F43E0DBD6873C350F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodTruck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB163090268D2687ADAA1AE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4765B4A71F5A3ACA00AE916D /* Sources */ = {
@@ -209,7 +305,9 @@
 			files = (
 				4765B4B11F5A3ACA00AE916D /* ViewController.swift in Sources */,
 				4765B4AF1F5A3ACA00AE916D /* AppDelegate.swift in Sources */,
-				4765B4DA1F5A439400AE916D /* SWRevealViewController.m in Sources */,
+				4765B4E81F5BE44B00AE916D /* SlideTruckView.swift in Sources */,
+				4765B50F1F5FB5C100AE916D /* FoodListView.swift in Sources */,
+				4765B4F21F5D1BDA00AE916D /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,9 +420,11 @@
 		};
 		4765B4BE1F5A3ACA00AE916D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C461DBE31BC8F26853C6258B /* Pods-FoodTruck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 26VEWE4A84;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FoodTruck",
@@ -333,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonik.FoodTruck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.3;
 				SWIFT_OBJC_BRIDGING_HEADER = "../../../temp/FoodTruck/FoodTruck/FoodTruck-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -341,9 +442,11 @@
 		};
 		4765B4BF1F5A3ACA00AE916D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9B1461FCF7D4FEB0D6781F /* Pods-FoodTruck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 26VEWE4A84;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FoodTruck",
@@ -352,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonik.FoodTruck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.3;
 				SWIFT_OBJC_BRIDGING_HEADER = "../../../temp/FoodTruck/FoodTruck/FoodTruck-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -376,6 +480,7 @@
 				4765B4BF1F5A3ACA00AE916D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

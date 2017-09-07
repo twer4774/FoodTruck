@@ -11,32 +11,31 @@ import MapKit
 
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
+    
+    //현재 위치를 표시해주는 레이블
+    @IBOutlet var currentLocation: UILabel!
+    //MapKit을 이용한 지도표시
+    @IBOutlet var myMapView: MKMapView!
+    //카카오내비 실행 버튼
+    @IBOutlet var kakaoNaviButton: UIView!
+    //슬라이드메뉴를 여는 버튼
     @IBOutlet var openSlideMenu: UIBarButtonItem!
     @IBOutlet var openRightSlide: UIBarButtonItem!
-    @IBOutlet var myMapView: MKMapView!
-    @IBOutlet var currentLocation: UILabel!
     
-    @IBOutlet var kakaoNaviButton: UIView!
-
-    
-    //지도 보여주기
+    //지도를 보여주기위한 메니져상수
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        //슬라이드메뉴 열기
         openSlideMenus()
         customizeNavBar()
         
-        //지도
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest //위치정확도 최고
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
-        myMapView.showsUserLocation = true
-        setAnnotation(latitude: 33.322511, longitude: 126.84186799999998, delta: 1, title: "표선민속촌", subtitle: "서귀포시 표선면 민속해안로 631-34")
+        //첫 화면 지도 셋팅
+        mapSettings()
+       
         
     }
     
@@ -45,6 +44,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func mapSettings(){
+         //지도
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest //위치정확도 최고
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        myMapView.showsUserLocation = true
+        setAnnotation(latitude: 33.322511, longitude: 126.84186799999998, delta: 1, title: "표선민속촌", subtitle: "서귀포시 표선면 민속해안로 631-34")
     }
     
     //위도와 경도로 원하는 위치 표시하기
@@ -96,16 +105,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
     }
     
-    
+ 
     func openSlideMenus(){
         if revealViewController() != nil{
             openSlideMenu.target = revealViewController()
-            openSlideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            openSlideMenu.action = #selector(SWRevealViewController.rightRevealToggle(_:))
             revealViewController().rearViewRevealWidth = 275
             revealViewController().rightViewRevealWidth = 160
             
             openRightSlide.target = revealViewController()
-            openRightSlide.action = #selector(SWRevealViewController.rightRevealToggle(_:))
+            openRightSlide.action = #selector(SWRevealViewController.revealToggle(_:))
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
@@ -115,6 +124,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
+       
     //네비게이션 바 바탕색(주황)
     func customizeNavBar(){
         
@@ -147,4 +157,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
 
     }
+    
+    
 }
