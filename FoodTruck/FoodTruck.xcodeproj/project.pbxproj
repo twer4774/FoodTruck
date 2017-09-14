@@ -24,7 +24,9 @@
 		4765B4E61F5BDD6300AE916D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4765B4E51F5BDD6300AE916D /* GoogleService-Info.plist */; };
 		4765B4E81F5BE44B00AE916D /* SlideTruckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765B4E71F5BE44B00AE916D /* SlideTruckView.swift */; };
 		4765B4F21F5D1BDA00AE916D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4765B4F11F5D1BDA00AE916D /* SWRevealViewController.m */; };
-		4765B50F1F5FB5C100AE916D /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765B50E1F5FB5C100AE916D /* FoodListView.swift */; };
+		47852FD71F62C8DB0071700F /* FoodListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47852FD61F62C8DB0071700F /* FoodListTableViewCell.swift */; };
+		47852FDB1F62D2630071700F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47852FDA1F62D2630071700F /* Food.swift */; };
+		47C414BE1F6766E400434013 /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C414BD1F6766E400434013 /* FoodListViewController.swift */; };
 		D82C3C14BD8D4B46FE5EBD63 /* Pods_FoodTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF50AE4098FDE35077ADAB7 /* Pods_FoodTruck.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,10 +50,12 @@
 		4765B4DF1F5A484800AE916D /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
 		4765B4E11F5B9F8F00AE916D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4765B4E51F5BDD6300AE916D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4765B4E71F5BE44B00AE916D /* SlideTruckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideTruckView.swift; sourceTree = "<group>"; };
+		4765B4E71F5BE44B00AE916D /* SlideTruckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideTruckView.swift; path = ../../../Project/FoodTruck/FoodTruck/FoodTruck/SlideTruckView.swift; sourceTree = "<group>"; };
 		4765B4F01F5D1BDA00AE916D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4765B4F11F5D1BDA00AE916D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		4765B50E1F5FB5C100AE916D /* FoodListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		47852FD61F62C8DB0071700F /* FoodListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodListTableViewCell.swift; sourceTree = "<group>"; };
+		47852FDA1F62D2630071700F /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		47C414BD1F6766E400434013 /* FoodListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
 		AF9B1461FCF7D4FEB0D6781F /* Pods-FoodTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck.release.xcconfig"; sourceTree = "<group>"; };
 		C461DBE31BC8F26853C6258B /* Pods-FoodTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,8 +101,7 @@
 				4765B4CA1F5A427500AE916D /* SlideMenu */,
 				4765B4AE1F5A3ACA00AE916D /* AppDelegate.swift */,
 				4765B4B01F5A3ACA00AE916D /* ViewController.swift */,
-				4765B4E71F5BE44B00AE916D /* SlideTruckView.swift */,
-				4765B50E1F5FB5C100AE916D /* FoodListView.swift */,
+				47852FDC1F63835C0071700F /* FoodList */,
 				4765B4D21F5A42B000AE916D /* Main.storyboard */,
 				4765B4B51F5A3ACA00AE916D /* Assets.xcassets */,
 				4765B4B71F5A3ACA00AE916D /* LaunchScreen.storyboard */,
@@ -128,6 +131,7 @@
 			children = (
 				4765B4F01F5D1BDA00AE916D /* SWRevealViewController.h */,
 				4765B4F11F5D1BDA00AE916D /* SWRevealViewController.m */,
+				4765B4E71F5BE44B00AE916D /* SlideTruckView.swift */,
 			);
 			name = SlideMenu;
 			path = ../../../../temp/FoodTruck/FoodTruck;
@@ -141,6 +145,16 @@
 			);
 			name = Framework;
 			path = FoodTruck;
+			sourceTree = "<group>";
+		};
+		47852FDC1F63835C0071700F /* FoodList */ = {
+			isa = PBXGroup;
+			children = (
+				47852FD61F62C8DB0071700F /* FoodListTableViewCell.swift */,
+				47852FDA1F62D2630071700F /* Food.swift */,
+				47C414BD1F6766E400434013 /* FoodListViewController.swift */,
+			);
+			name = FoodList;
 			sourceTree = "<group>";
 		};
 		A47AAD60DCB5EE773BD1B76D /* Frameworks */ = {
@@ -248,13 +262,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -287,9 +311,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -303,10 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47852FDB1F62D2630071700F /* Food.swift in Sources */,
 				4765B4B11F5A3ACA00AE916D /* ViewController.swift in Sources */,
+				47C414BE1F6766E400434013 /* FoodListViewController.swift in Sources */,
 				4765B4AF1F5A3ACA00AE916D /* AppDelegate.swift in Sources */,
 				4765B4E81F5BE44B00AE916D /* SlideTruckView.swift in Sources */,
-				4765B50F1F5FB5C100AE916D /* FoodListView.swift in Sources */,
+				47852FD71F62C8DB0071700F /* FoodListTableViewCell.swift in Sources */,
 				4765B4F21F5D1BDA00AE916D /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +460,47 @@
 				);
 				INFOPLIST_FILE = FoodTruck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseNanoPB\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonik.FoodTruck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos10.3;
@@ -453,6 +523,47 @@
 				);
 				INFOPLIST_FILE = FoodTruck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseNanoPB\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonik.FoodTruck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos10.3;

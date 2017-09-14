@@ -8,6 +8,12 @@ target 'FoodTruck' do
   # Pods for FoodTruck
 
   pod ‘Firebase/Core’
+  pod ‘Firebase/Auth’
   pod ‘Firebase/Database’
+  pod ‘Firebase/Storage’
+  pod ‘Alamofire’
+  pod ‘AlamofireImage’
+  pod 'GoogleSignIn'
+  pod ‘FirebaseUI/Storage'
 
 end

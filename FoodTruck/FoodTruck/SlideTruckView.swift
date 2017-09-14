@@ -8,27 +8,32 @@
 
 import Foundation
 
+
+ var tableArray = ["BurritoTruck", "JuiceTruck", "DessertTruck"]
+
 class SlideTruckView: UITableViewController {
     @IBOutlet var tvListView: UITableView!
     
-//    var TableArray = [String]()
+
     
-    var TableArray = ["Hello", "Second", "World"]
-    override func viewDidLoad() {
-//        TableArray = ["Hello","Second","World"]
+       // var TableArray = [string]()
+    
+       override func viewDidLoad() {
+    //    TableArray = ["Hello","Second","World"]
 //        
+        //ref = Database.database().reference()
 
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return TableArray.count
+        return tableArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = TableArray[indexPath.row]
-        
+        cell.textLabel?.text = tableArray[indexPath.row]
+    
         return cell
     }
     
@@ -36,8 +41,8 @@ class SlideTruckView: UITableViewController {
         if segue.identifier == "sgDetail"{
             let cell = sender as! UITableViewCell
             let indexPath = self.tvListView.indexPath(for: cell)
-            let detailView = segue.destination as! FoodListView
-            detailView.receiveItem(TableArray[((indexPath as NSIndexPath?)?.row)!])
+            let foodListView = segue.destination as! FoodListViewController
+            foodListView.receiveItem(tableArray[((indexPath as NSIndexPath?)?.row)!])
         }
     }
 

@@ -139,8 +139,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         var options: KNVOptions
         var params: KNVParams
         var error: NSError?
-
-        
         
         //목적지 - 표선민속촌
         destination = KNVLocation(name: "표선민속촌", x: 126.841867, y: 33.322511)
@@ -157,6 +155,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
 
     }
-    
+        
     
 }
